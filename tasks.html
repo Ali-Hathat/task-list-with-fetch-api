@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Todo List of User</title>
+        <link rel="stylesheet" href="./css style/styleForAllTasks.css">
+    </head>
+
+    <body>
+        <a style="font-size:20px" href="file:///E:/DASH%20projects/API%20fetch%20request%20todo%20app/index.html">Go back</a>
+        <div class="tab">
+            <button class="tablinks" onclick="showTasks(event, 'page', getAllTasks)">All tasks</button>
+            <button class="tablinks" onclick="showTasks(event, 'page', getCompletedTasks)">Completed Tasks</button>
+            <button class="tablinks" onclick="showTasks(event, 'page', getUncompletedTasks)">Uncompleted Tasks</button>
+        </div>
+        <div id="page" class="tabcontent"></div>
+    </body>
+    
+    <script src="./javascript/loadAllTasks.js"></script>
+    
+</html>
